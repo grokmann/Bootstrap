@@ -70,10 +70,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Buttons.cs" />
-    <Compile Include="DisposableEnd.cs" />
-    <Compile Include="Enums\EDisposableEndType.cs" />
-    <Compile Include="Menu.cs" />
+    <Compile Include="Common\ElementBuilder.cs" />
+    <Compile Include="Common\ModelBase.cs" />
+    <Compile Include="Controls\Buttons.cs" />
+    <Compile Include="Common\DisposableEnd.cs" />
+    <Compile Include="Controls\Menu.cs" />
+    <Compile Include="Enums\EButtonType.cs" />
+    <Compile Include="Enums\ETag.cs" />
+    <Compile Include="Interfaces\IControlModel.cs" />
     <Compile Include="Models\ButtonModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

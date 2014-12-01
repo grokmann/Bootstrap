@@ -1,4 +1,4 @@
-﻿namespace Bs
+﻿namespace Bs.Controls
 {
     public static partial class BsExtensions
     {
