@@ -19,7 +19,8 @@ namespace Bs.Controls
             return new MvcHtmlString(element.ToString(TagRenderMode.Normal));
         }
 
-        public static MvcHtmlString ButtonFor<TModel, TProperty>(this HtmlHelper<TModel> helper, Expression<Func<TModel, TProperty>> expression)
+        public static MvcHtmlString ButtonFor<TModel, TProperty>(this HtmlHelper<TModel> helper, 
+            Expression<Func<TModel, TProperty>> expression)
             where TProperty : ButtonModel
         {
             var metadata = ModelMetadata.FromLambdaExpression(expression, helper.ViewData);
@@ -39,6 +40,16 @@ namespace Bs.Controls
             helper.ViewContext.Writer.Write(element.ToString(TagRenderMode.StartTag));
 
             return new DisposableEnd(helper, ETag.Button);
+        }
+
+        public static DisposableEnd CustomButtonFor<TModel, TProperty>(this HtmlHelper<TModel> helper,
+            Expression<Func<TModel, TProperty>> expression)
+        {
+            var metadata = ModelMetadata.FromLambdaExpression(expression, helper.ViewData);
+
+            var model = metadata.Model as ButtonModel;
+
+            return model == null ? null : CustomButton(helper, model);
         }
     }
 }

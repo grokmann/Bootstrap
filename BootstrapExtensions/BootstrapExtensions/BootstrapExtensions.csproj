@@ -75,6 +75,7 @@
     <Compile Include="Controls\Buttons.cs" />
     <Compile Include="Common\DisposableEnd.cs" />
     <Compile Include="Controls\Menu.cs" />
+    <Compile Include="Enums\EBootstrapColor.cs" />
     <Compile Include="Enums\EButtonType.cs" />
     <Compile Include="Enums\ETag.cs" />
     <Compile Include="Interfaces\IControlModel.cs" />
