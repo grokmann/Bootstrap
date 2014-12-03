@@ -47,13 +47,14 @@
   <ItemGroup>
     <Compile Include="Common\ElementBuilder.cs" />
     <Compile Include="Common\ModelBase.cs" />
-    <Compile Include="Controls\Buttons.cs" />
+    <Compile Include="Controls\Button.cs" />
     <Compile Include="Common\DisposableEnd.cs" />
-    <Compile Include="Controls\Menu.cs" />
+    <Compile Include="Controls\ButtonGroup.cs" />
     <Compile Include="Enums\EBootstrapColor.cs" />
     <Compile Include="Enums\EButtonType.cs" />
     <Compile Include="Enums\ETag.cs" />
     <Compile Include="Interfaces\IControlModel.cs" />
+    <Compile Include="Models\ButtonGroupModel.cs" />
     <Compile Include="Models\ButtonModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
